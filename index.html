@@ -6,14 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>on-a-deadline</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
-    <h1>ready?</h1>
+    <h1>You're on a dead-line, ready?</h1>
+
     <input
       onkeydown="return checkKey(event.key)"
-      placeholder="enter code:"
+      placeholder="{ enter crappy code: }"
       type="tel"
     />
+
+    <div class="checkboxes">
+      <ul>
+        <li>
+          First checkbox:
+          <input type="checkbox" id="myCheck" onclick="box1()" />
+          <p>Be creative! Think about the stuff that dreams are made of</p>
+          <p>and not only Yrgo movie lessons:)</p>
+        </li>
+
+        <li>
+          Second checkbox:
+          <input type="checkbox" id="myCheck2" onclick="box2()" />
+          <p>Create a repo from the Yrgo template</p>
+        </li>
+
+        <li>
+          Third checkbox:
+          <input type="checkbox" id="myCheck3" onclick="box3()" />
+          <p>Clone the repo to GitHub Desktop and publish on Netlify</p>
+        </li>
+
+        <li>
+          Almost there:
+          <input type="checkbox" />
+        </li>
+
+        <input type="checkbox" disabled />
+
+        <!-- <input type="checkbox" disabled />
+        <input type="checkbox" disabled /> -->
+      </ul>
+    </div>
+
+    <p id="text" style="display: none">Great start!</p>
+    <p id="text2" style="display: none">
+      https://github.com/yrgo/template-the-useless-web
+    </p>
+    <p id="text3" style="display: none">Smoove!</p>
+
+    <script src="script.js"></script>
   </body>
 </html>

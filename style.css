@@ -1,4 +1,17 @@
 body {
-  background-color: yellow;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-family: Helvetica;
+}
+
+input {
+  transition: transform 100ms ease;
+  cursor: pointer;
+}
+
+.checkboxes {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 100ms ease;
 }
