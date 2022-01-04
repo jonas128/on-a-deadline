@@ -1,5 +1,5 @@
 function checkKey(key) {
-  return key >= '0' && key <= '9';
+  return key;
 }
 
 function box1() {
@@ -41,6 +41,21 @@ function box3() {
   // If the checkbox is checked
   if (checkBox.checked == true) {
     document.body.style.backgroundColor = '#AA0000';
+    text.style.display = 'block';
+  } else {
+    text.style.display = 'none';
+  }
+}
+
+function box4() {
+  // Get the checkbox
+  var checkBox = document.getElementById('myCheck4');
+  // Get the output text
+  var text = document.getElementById('text4');
+
+  // If the checkbox is checked
+  if (checkBox.checked == true) {
+    document.body.style.backgroundColor = '#953553';
     text.style.display = 'block';
   } else {
     text.style.display = 'none';

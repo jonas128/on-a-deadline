@@ -10,19 +10,15 @@
   <body>
     <h1>You're on a dead-line, ready?</h1>
 
-    <input
-      onkeydown="return checkKey(event.key)"
-      placeholder="{ enter crappy code: }"
-      type="tel"
-    />
-
     <div class="checkboxes">
       <ul>
         <li>
           First checkbox:
           <input type="checkbox" id="myCheck" onclick="box1()" />
-          <p>Be creative! Think about the stuff that dreams are made of</p>
-          <p>and not only Yrgo movie lessons:)</p>
+          <p>
+            Be creative! Think about the stuff that dreams are made of and not
+            only Yrgo movie lessons:)
+          </p>
         </li>
 
         <li>
@@ -38,22 +34,31 @@
         </li>
 
         <li>
+          <input
+            onkeydown="return checkKey(event.key)"
+            placeholder="{ enter crappy code: }"
+            type="tel"
+          />
+        </li>
+        <!-- <p><br /></p> -->
+        <li>
           Almost there:
-          <input type="checkbox" />
+          <input type="checkbox" id="myCheck4" onclick="box4()" />
+        </li>
+        <li>
+          Too late:
+          <input type="checkbox" disabled />
         </li>
 
-        <input type="checkbox" disabled />
-
-        <!-- <input type="checkbox" disabled />
-        <input type="checkbox" disabled /> -->
       </ul>
     </div>
 
     <p id="text" style="display: none">Great start!</p>
     <p id="text2" style="display: none">
-      https://github.com/yrgo/template-the-useless-web
+      https://github.com/yrgo/template-the-useless-web</a>
     </p>
     <p id="text3" style="display: none">Smoove!</p>
+    <p id="text4" style="display: none">January 4th 9:00 CET</p>
 
     <script src="script.js"></script>
   </body>

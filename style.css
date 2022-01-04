@@ -1,6 +1,9 @@
 body {
   background-color: white;
   font-family: Helvetica;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
 }
 
 input {
@@ -10,8 +13,8 @@ input {
 
 .checkboxes {
   height: 300px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   transition: transform 100ms ease;
 }
