@@ -23,8 +23,8 @@ input {
 .textout {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
 }
